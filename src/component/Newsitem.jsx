@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import error from "../assets/404.png";
 
 
 export class Newsitem extends Component {
@@ -15,7 +16,8 @@ export class Newsitem extends Component {
     return (
     
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imgurl ? imgurl : " "} />
+      <Card.Img variant="top" src={imgurl ? imgurl : {error} } />
+      {error}
       <Card.Body>
         <Card.Title>{card_title}</Card.Title>
         <Card.Text>

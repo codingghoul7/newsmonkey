@@ -10,3 +10,8 @@ img{
   width: 250px;
   height: 200px;
 }
+.spinner{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
