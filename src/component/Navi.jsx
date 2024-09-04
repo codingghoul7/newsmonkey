@@ -1,6 +1,5 @@
-import React, { Component } from 'react';;
-
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class Nav extends Component {
@@ -10,31 +9,31 @@ export default class Nav extends Component {
 
       <nav className="navbar">
   <div className="navbar-left">
-    <a href="/" className="logo">
+    <Link to="/" className="logo">
      NewsMonkey
-    </a>
+    </Link>
   </div>
   <div className="navbar-center">
     <ul className="nav-links">
       <li>
-        <a href="/products">Products</a>
+        <Link to="/apple">Apple</Link>
       </li>
       <li>
-        <a href="/about">About Us</a>
+        <Link to="/">Tesla</Link>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
     </ul>
   </div>
   <div className="navbar-right">
-    <a href="/cart" className="cart-icon">
+    <Link to="/cart" className="cart-icon">
       <i className="fas fa-shopping-cart"></i>
       <span className="cart-count">0</span>
-    </a>
-    <a href="/account" className="user-icon">
+    </Link>
+    <Link to="/account" className="user-icon">
       <i className="fas fa-user"></i>
-    </a>
+    </Link>
   </div>
 </nav>
 
